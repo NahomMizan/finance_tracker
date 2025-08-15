@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AI-Powered Finance Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>AI-Powered Finance Tracker</h1>
+    <div id="auth">
+      <input id="email" placeholder="email" value="demo@user.com"/>
+      <input id="password" placeholder="password" value="demo" type="password"/>
+      <button id="loginBtn">Login</button>
+      <span id="authStatus"></span>
+    </div>
+
+    <div class="row">
+      <div>
+        <h3>Add Transaction</h3>
+        <input id="amount" type="number" placeholder="Amount"/>
+        <input id="category" placeholder="Category"/>
+        <input id="date" type="date"/>
+        <button id="addBtn">Add</button>
+      </div>
+      <div>
+        <h3>Spending by Category</h3>
+        <canvas id="chart" width="400" height="300"></canvas>
+      </div>
+    </div>
+
+    <h3>Insights</h3>
+    <pre id="insights"></pre>
+
+    <h3>Transactions</h3>
+    <ul id="list"></ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
